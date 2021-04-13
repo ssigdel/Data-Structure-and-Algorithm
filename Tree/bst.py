@@ -1,3 +1,5 @@
+import random
+
 class BSTNode:
     def __init__(self, data):
         self.data = data
@@ -123,7 +125,7 @@ def build_tree(data):
  
 # driver function   
 if __name__ == "__main__":
-    data = [5, 3, 1, 2, 6, 7, 10]
+    data = random.sample(range(0, 10), 10)
     root = build_tree(data)
 
     print("\n Inorder traversal:")
